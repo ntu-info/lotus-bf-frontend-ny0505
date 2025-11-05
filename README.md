@@ -1,11 +1,47 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/DZepDCgF)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=21465516&assignment_repo_type=AssignmentRepo)
+# LoTUS-BF Frontend
+
+## Setup Instructions
+
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+2. Start the development server:
+   ```sh
+   npm run dev
+   ```
+3. Build for production:
+   ```sh
+   npm run build
+   ```
+
+## App URLs
+- `/` — Home (full layout)
+- `/terms` — Terms page
+- `/query` — QueryBuilder page
+- `/studies` — Studies page
+- `/viewer` — NiiViewer page
+
+## Features
+- Search for brain function terms
+- Build queries and view related studies
+- Interactive NiiViewer for brain images
+- Responsive layout with resizable panes
+
+## Favicon
+A `favicon.ico` is included in the `public` folder. You can replace it with your own icon if desired.
+
+## Troubleshooting
+- If you see a blank page, check your browser console for errors.
+- Make sure all dependencies are installed and the dev server is running.
+
+## Notes
+- For server deployment, upload the `dist` folder after running `npm run build`.
+
+---
+
 nvm install --lts # for solving 
-
 rm -rf node_modules package-lock.json # delete all incompatible packages
-
 npm install # reinstall every packages according to pacakge.json
-
 npm run dev # for local development
-
 npm run build # for server deployment; upload the ./dist folder to a server
